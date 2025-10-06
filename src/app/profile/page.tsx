@@ -7,7 +7,10 @@ import { useRouter } from 'next/navigation'
 
 function page() {
   const router = useRouter()
-  const [data, setData] = useState("nothing")
+  
+  const [data, setData] = useState<{ email?: string; username?: string }>({})
+
+
   const logoutBtn = async () => {
     const response = await axios.get("/api/users/logout")
     if (response.status === 200) {
