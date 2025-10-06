@@ -27,7 +27,7 @@ function page() {
   return (
     <div className='flex flex-col items-center justify-center mt-10'>Profile
       <p> email <h1 className='text-amber-700'>{data?.email}</h1></p>
-      <p> userName <h1 className='text-amber-700'>{data?.username}</h1></p>
+      <h1> userName <h2  className='text-amber-700'>{data?.username}</h2></h1>
       <button
         onClick={logoutBtn}
         className='p-2 bg-blue-400 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400'
